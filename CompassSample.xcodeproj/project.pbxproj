@@ -13,6 +13,7 @@
 		CD487BDD200D6D2A00F24631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD487BDC200D6D2A00F24631 /* Assets.xcassets */; };
 		CD487BE0200D6D2A00F24631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD487BDE200D6D2A00F24631 /* LaunchScreen.storyboard */; };
 		CD487BE3200D6D2A00F24631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD487BE2200D6D2A00F24631 /* main.m */; };
+		CD487BEF20147B1B00F24631 /* HTWCompassView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD487BEE20147B1B00F24631 /* HTWCompassView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		CD487BDF200D6D2A00F24631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD487BE1200D6D2A00F24631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD487BE2200D6D2A00F24631 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD487BED20147B1B00F24631 /* HTWCompassView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTWCompassView.h; sourceTree = "<group>"; };
+		CD487BEE20147B1B00F24631 /* HTWCompassView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTWCompassView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		CD487BD2200D6D2A00F24631 /* CompassSample */ = {
 			isa = PBXGroup;
 			children = (
+				CD487BE92014743700F24631 /* View */,
 				CD487BD3200D6D2A00F24631 /* AppDelegate.h */,
 				CD487BD4200D6D2A00F24631 /* AppDelegate.m */,
 				CD487BD6200D6D2A00F24631 /* ViewController.h */,
@@ -69,6 +73,15 @@
 				CD487BE2200D6D2A00F24631 /* main.m */,
 			);
 			path = CompassSample;
+			sourceTree = "<group>";
+		};
+		CD487BE92014743700F24631 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD487BED20147B1B00F24631 /* HTWCompassView.h */,
+				CD487BEE20147B1B00F24631 /* HTWCompassView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +158,7 @@
 				CD487BD8200D6D2A00F24631 /* ViewController.m in Sources */,
 				CD487BE3200D6D2A00F24631 /* main.m in Sources */,
 				CD487BD5200D6D2A00F24631 /* AppDelegate.m in Sources */,
+				CD487BEF20147B1B00F24631 /* HTWCompassView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 429PR6S72V;
 				INFOPLIST_FILE = CompassSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.etmall.CompassSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 429PR6S72V;
 				INFOPLIST_FILE = CompassSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.etmall.CompassSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
